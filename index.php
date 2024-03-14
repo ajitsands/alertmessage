@@ -54,6 +54,9 @@ body {
                     case 'DeleteData':
                         DeleteRowFromTheTable();
                         break;
+                    case 'EditData':
+                        DeleteRowFromTheTable();
+                        break;
                     default:
                         alert('No action defined for this message.');
                 }
@@ -78,7 +81,7 @@ body {
         });
         
         $('#btn_warning').click(function(){
-            SaNDSAlert('This is a Warning Message..!','DeleteData','warning','#E14F00');
+            SaNDSAlert('This is a Warning Message..!','EditData','warning','#E14F00');
         });
         
         function AddDataToDatabase()
